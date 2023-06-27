@@ -51,7 +51,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -184,7 +184,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
 
     .left-header {
         display: flex;
@@ -616,12 +616,12 @@ section {
                     }
                 }
 
-                    i {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 1.3rem;
-                    }
+                i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                }
             }
         }
     }
@@ -633,7 +633,8 @@ section {
         .input-control {
             margin: 1.5rem 0;
 
-            input, textarea {
+            input,
+            textarea {
                 border-radius: 30px;
                 font-weight: inherit;
                 font-size: inherit;
@@ -650,6 +651,7 @@ section {
 
         .i-c-2 {
             display: flex;
+
             :last-child {
                 margin-left: 1.5rem;
             }
@@ -740,3 +742,5 @@ section {
         }
     }
 }
+
+@import './media';

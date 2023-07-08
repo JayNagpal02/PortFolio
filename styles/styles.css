@@ -8,7 +8,7 @@
 :root {
   --color-primary: #191D2B;
   --color-secondary: #27AE60;
-  --color-white: #FFFFFF;
+  --color-white: #F4F4F4;
   --color-black: #000000;
   --color-grey-0: #F8F8F8;
   --color-grey-1: #DBE1E8;
@@ -206,10 +206,6 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
-  filter: grayscale(0);
 }
 .header-content .right-header {
   display: flex;
@@ -348,6 +344,12 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
   width: 85%;
 }
+.about-stats .progress-bars .progress-bar .progress-con .progress .java {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .kotlin {
+  width: 70%;
+}
 
 .stat-title {
   text-transform: uppercase;
@@ -434,6 +436,10 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
+}
+.portfolios .portfolio-item p {
+  font-size: 0.6rem;
+  margin-left: 3rem;
 }
 .portfolios .portfolio-item .hover-item {
   width: 100%;
@@ -585,6 +591,9 @@ section {
   display: flex;
   justify-content: flex-start;
 }
+.contact-content-con .right-contact .submit-btn .mainBtn {
+  border-radius: 15px;
+}
 
 .btn-con {
   display: flex;
@@ -628,6 +637,24 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   transform: translateX(0);
+}
+
+.mainBtn {
+  color: var(--color-white);
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+.mainBtn:hover {
+  background-color: var(--color-secondary);
 }
 
 .main-title {
@@ -680,7 +707,7 @@ section {
     padding-bottom: 6rem;
   }
   .contact-content-con {
-    min-height: 170vh;
+    min-height: 170vh !important;
     flex-direction: column;
   }
   .contact-content-con .right-contact {
@@ -715,7 +742,6 @@ section {
     padding: 7rem 11rem;
   }
   .contact-content-con {
-    min-height: 170vh;
     flex-direction: column;
   }
   .contact-content-con .right-contact {

@@ -33,7 +33,7 @@
     }
 
     .contact-content-con {
-        min-height: 170vh;
+        min-height: 170vh !important;
         flex-direction: column;
 
         .right-contact {
@@ -80,7 +80,6 @@
     }
 
     .contact-content-con {
-        min-height: 170vh;
         flex-direction: column;
 
         .right-contact {
